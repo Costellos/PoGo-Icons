@@ -24,23 +24,6 @@
     .hero-icons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
     .hero-icons .pogo { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
 
-    /* Code block */
-    .code-block {
-      background: #1a1a2e;
-      border: 1px solid #2a2a4a;
-      border-radius: 8px;
-      padding: 1rem 1.5rem;
-      display: inline-block;
-      text-align: left;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem;
-      color: #b8b8d0;
-      max-width: 90%;
-    }
-    .code-block .tag { color: #ff79c6; }
-    .code-block .attr { color: #8be9fd; }
-    .code-block .val { color: #50fa7b; }
-
     /* Sections */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
     section { padding: 2rem 0; }
@@ -48,6 +31,10 @@
     h2 {
       font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em;
       color: #7b7bff; margin: 0 0 1rem;
+    }
+    h3 {
+      font-size: 0.8rem; color: #9a9ab8; margin: 1.5rem 0 0.75rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
     }
     .row {
       display: flex; align-items: center; gap: 1.5rem;
@@ -68,6 +55,52 @@
     }
     .inline-demo {
       font-size: 1.1rem; line-height: 2; margin: 0.5rem 0;
+    }
+
+    /* Code blocks */
+    pre.code {
+      background: #13132a;
+      border: 1px solid #2a2a4a;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0 0;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #b8b8d0;
+      overflow-x: auto;
+      white-space: pre;
+    }
+    pre.code .t { color: #ff79c6; }
+    pre.code .a { color: #8be9fd; }
+    pre.code .v { color: #50fa7b; }
+    pre.code .c { color: #6272a4; }
+
+    /* Size chart table */
+    .size-chart {
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+      font-size: 0.85rem;
+    }
+    .size-chart th {
+      text-align: left;
+      padding: 0.4rem 1rem 0.4rem 0;
+      color: #7b7bff;
+      font-weight: 600;
+      border-bottom: 1px solid #2a2a4a;
+    }
+    .size-chart td {
+      padding: 0.35rem 1rem 0.35rem 0;
+      border-bottom: 1px solid #1a1a3a;
+      color: #b8b8d0;
+    }
+    .size-chart td:first-child {
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      color: #50fa7b;
+      font-size: 0.8rem;
+    }
+    .size-charts {
+      display: flex; gap: 3rem; flex-wrap: wrap; margin-top: 0.5rem;
     }
 
     /* Footer */
@@ -94,9 +127,8 @@
       <i class="pogo pogo-garchomp pogo-3xl pogo-purified"></i>
       <i class="pogo pogo-gengar pogo-3xl pogo-shadow pogo-shiny"></i>
     </div>
-    <div class="code-block">
-      <span class="tag">&lt;i</span> <span class="attr">class</span>=<span class="val">"pogo pogo-pikachu pogo-xl"</span><span class="tag">&gt;&lt;/i&gt;</span>
-    </div>
+<pre class="code"><span class="c">&lt;!-- Include the CSS --&gt;</span>
+<span class="t">&lt;link</span> <span class="a">rel</span>=<span class="v">"stylesheet"</span> <span class="a">href</span>=<span class="v">"dist/pogo-icons.css"</span><span class="t">&gt;</span></pre>
   </div>
 
   <div class="container">
@@ -116,6 +148,9 @@
         <div class="item"><i class="pogo pogo-gyarados pogo-xl"></i><small>gyarados</small></div>
         <div class="item"><i class="pogo pogo-tyranitar pogo-xl"></i><small>tyranitar</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-bulbasaur"</span><span class="t">&gt;&lt;/i&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-charizard"</span><span class="t">&gt;&lt;/i&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-mewtwo"</span><span class="t">&gt;&lt;/i&gt;</span></pre>
     </section>
 
     <!-- By Dex Number -->
@@ -129,6 +164,9 @@
         <div class="item"><i class="pogo pogo-384 pogo-xl"></i><small>pogo-384</small></div>
         <div class="item"><i class="pogo pogo-448 pogo-xl"></i><small>pogo-448</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-1"</span><span class="t">&gt;&lt;/i&gt;</span>    <span class="c">&lt;!-- Bulbasaur --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-25"</span><span class="t">&gt;&lt;/i&gt;</span>   <span class="c">&lt;!-- Pikachu --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-150"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- Mewtwo --&gt;</span></pre>
     </section>
 
     <!-- Forms -->
@@ -142,26 +180,33 @@
         <div class="item"><i class="pogo pogo-deoxys-attack pogo-xl"></i><small>attack</small></div>
         <div class="item"><i class="pogo pogo-groudon-primal pogo-xl"></i><small>primal</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-charizard-mega-x"</span><span class="t">&gt;&lt;/i&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-raticate-alolan"</span><span class="t">&gt;&lt;/i&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-giratina-origin"</span><span class="t">&gt;&lt;/i&gt;</span></pre>
     </section>
 
     <!-- Effects -->
     <section>
-      <h2>Shadow Effect</h2>
+      <h2>Effects</h2>
+
+      <h3>Shadow</h3>
       <div class="row panel-dark">
         <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-shadow"></i><small>shadow</small></div>
         <div class="item"><i class="pogo pogo-gengar pogo-2xl pogo-shadow"></i><small>shadow</small></div>
         <div class="item"><i class="pogo pogo-swampert pogo-2xl pogo-shadow"></i><small>shadow</small></div>
         <div class="item"><i class="pogo pogo-machamp pogo-2xl pogo-shadow"></i><small>shadow</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-mewtwo pogo-shadow"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- Purple aura + darkening --&gt;</span></pre>
 
-      <h2 style="margin-top: 1.5rem;">Purified Effect</h2>
+      <h3>Purified</h3>
       <div class="row panel-dark">
         <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-purified"></i><small>purified</small></div>
         <div class="item"><i class="pogo pogo-gengar pogo-2xl pogo-purified"></i><small>purified</small></div>
         <div class="item"><i class="pogo pogo-dragonite pogo-2xl pogo-purified"></i><small>purified</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-mewtwo pogo-purified"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- White/blue glow --&gt;</span></pre>
 
-      <h2 style="margin-top: 1.5rem;">Shiny Swap</h2>
+      <h3>Shiny</h3>
       <div class="row panel-dark">
         <div class="item"><i class="pogo pogo-charizard pogo-2xl"></i><small>regular</small></div>
         <div class="item"><i class="pogo pogo-charizard pogo-2xl pogo-shiny"></i><small>shiny</small></div>
@@ -170,17 +215,25 @@
         <div class="item"><i class="pogo pogo-gyarados pogo-2xl"></i><small>regular</small></div>
         <div class="item"><i class="pogo pogo-gyarados pogo-2xl pogo-shiny"></i><small>shiny</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-charizard pogo-shiny"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- Swaps to shiny sprite + sparkles --&gt;</span></pre>
 
-      <h2 style="margin-top: 1.5rem;">Combos</h2>
+      <h3>Combos</h3>
       <div class="row panel-dark">
         <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-shadow pogo-shiny"></i><small>shadow+shiny</small></div>
         <div class="item"><i class="pogo pogo-charizard pogo-2xl pogo-shadow pogo-shiny"></i><small>shadow+shiny</small></div>
       </div>
+<pre class="code"><span class="c">&lt;!-- Effects are composable — combine any together --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-mewtwo pogo-shadow pogo-shiny"</span><span class="t">&gt;&lt;/i&gt;</span>
+
+<span class="c">&lt;!-- Disable animations with pogo-static --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-mewtwo pogo-shadow pogo-static"</span><span class="t">&gt;&lt;/i&gt;</span></pre>
     </section>
 
     <!-- Sizes -->
     <section>
-      <h2>Sizes — Fixed (px)</h2>
+      <h2>Sizes</h2>
+
+      <h3>Fixed (px)</h3>
       <div class="row" style="align-items: end;">
         <div class="item"><i class="pogo pogo-pikachu pogo-xs"></i><small>xs</small></div>
         <div class="item"><i class="pogo pogo-pikachu pogo-sm"></i><small>sm</small></div>
@@ -192,8 +245,11 @@
         <div class="item"><i class="pogo pogo-pikachu pogo-4xl"></i><small>4xl</small></div>
         <div class="item"><i class="pogo pogo-pikachu pogo-5xl"></i><small>5xl</small></div>
       </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-pikachu pogo-xs"</span><span class="t">&gt;&lt;/i&gt;</span>   <span class="c">&lt;!-- 16px --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-pikachu pogo-xl"</span><span class="t">&gt;&lt;/i&gt;</span>   <span class="c">&lt;!-- 64px --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-pikachu pogo-5xl"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- 256px --&gt;</span></pre>
 
-      <h2 style="margin-top: 1.5rem;">Sizes — Relative (em)</h2>
+      <h3>Relative (em) — scales with parent font-size</h3>
       <div class="row" style="align-items: end; font-size: 1rem;">
         <div class="item"><i class="pogo pogo-charizard pogo-1x"></i><small>1x</small></div>
         <div class="item"><i class="pogo pogo-charizard pogo-2x"></i><small>2x</small></div>
@@ -203,6 +259,36 @@
         <div class="item"><i class="pogo pogo-charizard pogo-6x"></i><small>6x</small></div>
         <div class="item"><i class="pogo pogo-charizard pogo-7x"></i><small>7x</small></div>
         <div class="item"><i class="pogo pogo-charizard pogo-8x"></i><small>8x</small></div>
+      </div>
+<pre class="code"><span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-charizard pogo-1x"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- 1.8em (default) --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-charizard pogo-4x"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- 7.2em --&gt;</span>
+<span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-charizard pogo-8x"</span><span class="t">&gt;&lt;/i&gt;</span>  <span class="c">&lt;!-- 14.4em --&gt;</span></pre>
+
+      <h3>Size Reference</h3>
+      <div class="size-charts">
+        <table class="size-chart">
+          <tr><th>Class</th><th>Type</th><th>Size</th></tr>
+          <tr><td>pogo-xs</td><td>Fixed</td><td>16px</td></tr>
+          <tr><td>pogo-sm</td><td>Fixed</td><td>24px</td></tr>
+          <tr><td>pogo-md</td><td>Fixed</td><td>32px</td></tr>
+          <tr><td>pogo-lg</td><td>Fixed</td><td>48px</td></tr>
+          <tr><td>pogo-xl</td><td>Fixed</td><td>64px</td></tr>
+          <tr><td>pogo-2xl</td><td>Fixed</td><td>96px</td></tr>
+          <tr><td>pogo-3xl</td><td>Fixed</td><td>128px</td></tr>
+          <tr><td>pogo-4xl</td><td>Fixed</td><td>192px</td></tr>
+          <tr><td>pogo-5xl</td><td>Fixed</td><td>256px</td></tr>
+        </table>
+        <table class="size-chart">
+          <tr><th>Class</th><th>Type</th><th>Size</th></tr>
+          <tr><td>pogo-1x</td><td>Relative</td><td>1.8em</td></tr>
+          <tr><td>pogo-2x</td><td>Relative</td><td>3.6em</td></tr>
+          <tr><td>pogo-3x</td><td>Relative</td><td>5.4em</td></tr>
+          <tr><td>pogo-4x</td><td>Relative</td><td>7.2em</td></tr>
+          <tr><td>pogo-5x</td><td>Relative</td><td>9em</td></tr>
+          <tr><td>pogo-6x</td><td>Relative</td><td>10.8em</td></tr>
+          <tr><td>pogo-7x</td><td>Relative</td><td>12.6em</td></tr>
+          <tr><td>pogo-8x</td><td>Relative</td><td>14.4em</td></tr>
+        </table>
       </div>
     </section>
 
@@ -222,6 +308,8 @@
         <i class="pogo pogo-charmander"></i> Charmander
         <i class="pogo pogo-squirtle"></i> Squirtle
       </p>
+<pre class="code"><span class="c">&lt;!-- Icons scale naturally with surrounding text --&gt;</span>
+<span class="t">&lt;p&gt;</span>Catch <span class="t">&lt;i</span> <span class="a">class</span>=<span class="v">"pogo pogo-pikachu"</span><span class="t">&gt;&lt;/i&gt;</span> Pikachu today!<span class="t">&lt;/p&gt;</span></pre>
     </section>
 
     <!-- Light Background -->
