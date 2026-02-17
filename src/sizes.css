@@ -1,0 +1,37 @@
+/* ============================================
+   pogo-icons — Size Modifiers
+   ============================================ */
+
+/* Fixed sizes */
+.pogo.pogo-xs  { width: 16px;  height: 16px; }
+.pogo.pogo-sm  { width: 24px;  height: 24px; }
+.pogo.pogo-md  { width: 32px;  height: 32px; }
+.pogo.pogo-lg  { width: 48px;  height: 48px; }
+.pogo.pogo-xl  { width: 64px;  height: 64px; }
+.pogo.pogo-2xl { width: 96px;  height: 96px; }
+.pogo.pogo-3xl { width: 128px; height: 128px; }
+.pogo.pogo-4xl { width: 192px; height: 192px; }
+.pogo.pogo-5xl { width: 256px; height: 256px; }
+
+/* Relative sizes — multiplied from 1.8em base (1x = default) */
+.pogo.pogo-1x  { width: 1.8em;  height: 1.8em; }
+.pogo.pogo-2x  { width: 3.6em;  height: 3.6em; }
+.pogo.pogo-3x  { width: 5.4em;  height: 5.4em; }
+.pogo.pogo-4x  { width: 7.2em;  height: 7.2em; }
+.pogo.pogo-5x  { width: 9em;    height: 9em; }
+.pogo.pogo-6x  { width: 10.8em; height: 10.8em; }
+.pogo.pogo-7x  { width: 12.6em; height: 12.6em; }
+.pogo.pogo-8x  { width: 14.4em; height: 14.4em; }
+
+/* Inline — fits to line height, vertically centered */
+.pogo.pogo-inline {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+/* Fixed-width — useful for alignment in lists */
+.pogo.pogo-fw {
+  width: 1.25em;
+  text-align: center;
+}

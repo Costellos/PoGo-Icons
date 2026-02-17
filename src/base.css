@@ -1,0 +1,19 @@
+/* ============================================
+   pogo-icons — Base Styles
+   ============================================ */
+
+.pogo {
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  background-image: var(--pogo-sprite, url('placeholder.svg'));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: -0.25em;
+  line-height: 1;
+  font-style: normal;
+  text-decoration: none;
+  position: relative;
+  overflow: visible;
+}

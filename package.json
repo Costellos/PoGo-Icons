@@ -1,0 +1,16 @@
+{
+  "name": "pogo-icons",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FontAwesome-style Pokemon GO sprite icons via CSS classes",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:map": "node scripts/build-mapping.js",
+    "build:fetch": "node scripts/fetch-sprites.js",
+    "build:optimize": "node scripts/optimize-sprites.js",
+    "build:css": "node scripts/generate-css.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
