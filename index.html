@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pogo-icons — Pokemon GO Sprite Icons</title>
+  <link rel="stylesheet" href="dist/pogo-icons.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background: #0f0f1e; color: #e8e8f0;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      background: linear-gradient(180deg, #1a1a3e 0%, #0f0f1e 100%);
+    }
+    .hero h1 { font-size: 2.5rem; margin: 0 0 0.5rem; color: #fff; }
+    .hero p { font-size: 1.1rem; color: #9a9ab8; margin: 0 0 1.5rem; }
+    .hero-icons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .hero-icons .pogo { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+
+    /* Code block */
+    .code-block {
+      background: #1a1a2e;
+      border: 1px solid #2a2a4a;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      display: inline-block;
+      text-align: left;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem;
+      color: #b8b8d0;
+      max-width: 90%;
+    }
+    .code-block .tag { color: #ff79c6; }
+    .code-block .attr { color: #8be9fd; }
+    .code-block .val { color: #50fa7b; }
+
+    /* Sections */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 2rem 0; }
+    section + section { border-top: 1px solid #1a1a3a; }
+    h2 {
+      font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: #7b7bff; margin: 0 0 1rem;
+    }
+    .row {
+      display: flex; align-items: center; gap: 1.5rem;
+      flex-wrap: wrap; margin: 0.75rem 0;
+    }
+    .item {
+      display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+    }
+    .item small {
+      font-size: 0.65rem; color: #666; max-width: 90px;
+      text-align: center; word-break: break-all;
+    }
+    .panel-dark {
+      background: #0a0a18; padding: 1.5rem; border-radius: 8px;
+    }
+    .panel-light {
+      background: #f0f0f0; padding: 1.5rem; border-radius: 8px; color: #333;
+    }
+    .inline-demo {
+      font-size: 1.1rem; line-height: 2; margin: 0.5rem 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 2rem 1.5rem;
+      color: #555; font-size: 0.8rem;
+      border-top: 1px solid #1a1a3a;
+    }
+    footer a { color: #7b7bff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>pogo-icons</h1>
+    <p>FontAwesome-style Pokemon GO sprite icons. One CSS file. Simple classes.</p>
+    <div class="hero-icons">
+      <i class="pogo pogo-pikachu pogo-3xl"></i>
+      <i class="pogo pogo-charizard pogo-3xl pogo-shiny"></i>
+      <i class="pogo pogo-mewtwo pogo-3xl pogo-shadow"></i>
+      <i class="pogo pogo-lucario pogo-3xl"></i>
+      <i class="pogo pogo-garchomp pogo-3xl pogo-purified"></i>
+      <i class="pogo pogo-gengar pogo-3xl pogo-shadow pogo-shiny"></i>
+    </div>
+    <div class="code-block">
+      <span class="tag">&lt;i</span> <span class="attr">class</span>=<span class="val">"pogo pogo-pikachu pogo-xl"</span><span class="tag">&gt;&lt;/i&gt;</span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- By Name -->
+    <section>
+      <h2>By Name</h2>
+      <div class="row">
+        <div class="item"><i class="pogo pogo-bulbasaur pogo-xl"></i><small>bulbasaur</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-xl"></i><small>charizard</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-xl"></i><small>pikachu</small></div>
+        <div class="item"><i class="pogo pogo-mewtwo pogo-xl"></i><small>mewtwo</small></div>
+        <div class="item"><i class="pogo pogo-gengar pogo-xl"></i><small>gengar</small></div>
+        <div class="item"><i class="pogo pogo-lucario pogo-xl"></i><small>lucario</small></div>
+        <div class="item"><i class="pogo pogo-garchomp pogo-xl"></i><small>garchomp</small></div>
+        <div class="item"><i class="pogo pogo-dragonite pogo-xl"></i><small>dragonite</small></div>
+        <div class="item"><i class="pogo pogo-gyarados pogo-xl"></i><small>gyarados</small></div>
+        <div class="item"><i class="pogo pogo-tyranitar pogo-xl"></i><small>tyranitar</small></div>
+      </div>
+    </section>
+
+    <!-- By Dex Number -->
+    <section>
+      <h2>By Dex Number</h2>
+      <div class="row">
+        <div class="item"><i class="pogo pogo-1 pogo-xl"></i><small>pogo-1</small></div>
+        <div class="item"><i class="pogo pogo-6 pogo-xl"></i><small>pogo-6</small></div>
+        <div class="item"><i class="pogo pogo-25 pogo-xl"></i><small>pogo-25</small></div>
+        <div class="item"><i class="pogo pogo-150 pogo-xl"></i><small>pogo-150</small></div>
+        <div class="item"><i class="pogo pogo-384 pogo-xl"></i><small>pogo-384</small></div>
+        <div class="item"><i class="pogo pogo-448 pogo-xl"></i><small>pogo-448</small></div>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section>
+      <h2>Forms</h2>
+      <div class="row">
+        <div class="item"><i class="pogo pogo-charizard-mega-x pogo-xl"></i><small>mega-x</small></div>
+        <div class="item"><i class="pogo pogo-charizard-mega-y pogo-xl"></i><small>mega-y</small></div>
+        <div class="item"><i class="pogo pogo-raticate-alolan pogo-xl"></i><small>alolan</small></div>
+        <div class="item"><i class="pogo pogo-giratina-origin pogo-xl"></i><small>origin</small></div>
+        <div class="item"><i class="pogo pogo-deoxys-attack pogo-xl"></i><small>attack</small></div>
+        <div class="item"><i class="pogo pogo-groudon-primal pogo-xl"></i><small>primal</small></div>
+      </div>
+    </section>
+
+    <!-- Effects -->
+    <section>
+      <h2>Shadow Effect</h2>
+      <div class="row panel-dark">
+        <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-shadow"></i><small>shadow</small></div>
+        <div class="item"><i class="pogo pogo-gengar pogo-2xl pogo-shadow"></i><small>shadow</small></div>
+        <div class="item"><i class="pogo pogo-swampert pogo-2xl pogo-shadow"></i><small>shadow</small></div>
+        <div class="item"><i class="pogo pogo-machamp pogo-2xl pogo-shadow"></i><small>shadow</small></div>
+      </div>
+
+      <h2 style="margin-top: 1.5rem;">Purified Effect</h2>
+      <div class="row panel-dark">
+        <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-purified"></i><small>purified</small></div>
+        <div class="item"><i class="pogo pogo-gengar pogo-2xl pogo-purified"></i><small>purified</small></div>
+        <div class="item"><i class="pogo pogo-dragonite pogo-2xl pogo-purified"></i><small>purified</small></div>
+      </div>
+
+      <h2 style="margin-top: 1.5rem;">Shiny Swap</h2>
+      <div class="row panel-dark">
+        <div class="item"><i class="pogo pogo-charizard pogo-2xl"></i><small>regular</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-2xl pogo-shiny"></i><small>shiny</small></div>
+        <div class="item"><i class="pogo pogo-mewtwo pogo-2xl"></i><small>regular</small></div>
+        <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-shiny"></i><small>shiny</small></div>
+        <div class="item"><i class="pogo pogo-gyarados pogo-2xl"></i><small>regular</small></div>
+        <div class="item"><i class="pogo pogo-gyarados pogo-2xl pogo-shiny"></i><small>shiny</small></div>
+      </div>
+
+      <h2 style="margin-top: 1.5rem;">Combos</h2>
+      <div class="row panel-dark">
+        <div class="item"><i class="pogo pogo-mewtwo pogo-2xl pogo-shadow pogo-shiny"></i><small>shadow+shiny</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-2xl pogo-shadow pogo-shiny"></i><small>shadow+shiny</small></div>
+      </div>
+    </section>
+
+    <!-- Sizes -->
+    <section>
+      <h2>Sizes — Fixed (px)</h2>
+      <div class="row" style="align-items: end;">
+        <div class="item"><i class="pogo pogo-pikachu pogo-xs"></i><small>xs</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-sm"></i><small>sm</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-md"></i><small>md</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-lg"></i><small>lg</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-xl"></i><small>xl</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-2xl"></i><small>2xl</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-3xl"></i><small>3xl</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-4xl"></i><small>4xl</small></div>
+        <div class="item"><i class="pogo pogo-pikachu pogo-5xl"></i><small>5xl</small></div>
+      </div>
+
+      <h2 style="margin-top: 1.5rem;">Sizes — Relative (em)</h2>
+      <div class="row" style="align-items: end; font-size: 1rem;">
+        <div class="item"><i class="pogo pogo-charizard pogo-1x"></i><small>1x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-2x"></i><small>2x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-3x"></i><small>3x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-4x"></i><small>4x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-5x"></i><small>5x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-6x"></i><small>6x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-7x"></i><small>7x</small></div>
+        <div class="item"><i class="pogo pogo-charizard pogo-8x"></i><small>8x</small></div>
+      </div>
+    </section>
+
+    <!-- Inline -->
+    <section>
+      <h2>Inline with Text</h2>
+      <p class="inline-demo">
+        Today's featured Pokemon: <i class="pogo pogo-pikachu"></i> Pikachu
+        and <i class="pogo pogo-eevee"></i> Eevee!
+      </p>
+      <p class="inline-demo">
+        Battle with <i class="pogo pogo-mewtwo pogo-shadow"></i> Shadow Mewtwo for extra challenge.
+        Or try <i class="pogo pogo-charizard pogo-shiny"></i> Shiny Charizard!
+      </p>
+      <p class="inline-demo" style="font-size: 0.9rem; color: #888;">
+        Small text: <i class="pogo pogo-bulbasaur"></i> Bulbasaur
+        <i class="pogo pogo-charmander"></i> Charmander
+        <i class="pogo pogo-squirtle"></i> Squirtle
+      </p>
+    </section>
+
+    <!-- Light Background -->
+    <section>
+      <h2>On Light Background</h2>
+      <div class="row panel-light">
+        <div class="item"><i class="pogo pogo-bulbasaur pogo-xl"></i><small>normal</small></div>
+        <div class="item"><i class="pogo pogo-bulbasaur pogo-xl pogo-shadow"></i><small>shadow</small></div>
+        <div class="item"><i class="pogo pogo-bulbasaur pogo-xl pogo-purified"></i><small>purified</small></div>
+        <div class="item"><i class="pogo pogo-bulbasaur pogo-xl pogo-shiny"></i><small>shiny</small></div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>
+      Sprites via <a href="https://github.com/PokeMiners/pogo_assets">PokeMiners/pogo_assets</a>
+      &middot; Species data via <a href="https://github.com/pvpoke/pvpoke">PvPoke</a>
+    </p>
+    <p>1,249 species &middot; 996 dex aliases &middot; Shadow / Shiny / Purified effects</p>
+  </footer>
+
+</body>
+</html>

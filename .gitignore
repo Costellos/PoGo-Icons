@@ -1,6 +1,5 @@
 node_modules/
 sprites/
-dist/sprites/
 data/.api-cache/
 data/missing-sprites.json
 *.log
